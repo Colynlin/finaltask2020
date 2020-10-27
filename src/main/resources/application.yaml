@@ -1,0 +1,19 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@127.0.0.1:1521:orcl
+    username: scott
+    password: tiger
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+shiro-redis:
+  enabled: true
+  redis-manager:
+    host: 127.0.0.1:6379
+dormitory:
+  jwt:
+    secret: f4e2e52034348f86b67cde581c0f9eb5
+    expire: 604800
+    header: Authorization
